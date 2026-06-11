@@ -1,0 +1,360 @@
+.container{
+   display: flex;
+    justify-content: right;
+    margin-right: 5px;
+    gap: 15px;
+
+    /* EKLENECEK KISIMLAR */
+    position: fixed;    /* Ekrana çiviledik */
+    top: 30px;          /* Siyah kutunun içinde dikey hizası */
+    right: 15px;        /* Sağ köşeden bırakacağı boşluk */
+    z-index: 1001;      /* Siyah kutunun üstünde görünmesi için */
+    
+    
+}
+body{
+    
+    background-color: #865a2e; /*sütlü kahve tonu #E6CCB2*/
+}
+.box-item{ /*bize ulaşın vs.*/
+   
+   font-size: 15px;
+    border: none;
+    text-decoration: none;
+    color: white;
+
+    /* DEĞİŞTİRİLECEK KISIM */
+    margin-top: 10px;    /* Eski -48px'i 0 yaptık, yukarı kaçmasını engelledik */
+    z-index: 1000;
+ }
+
+ .başlık{ /*cafe yazısı*/
+    display: flex;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    margin-left: -4px;
+
+    /* DEĞİŞTİRELECEK/EKLENECEK KISIMLAR */
+    margin-top: 0px;    /* Eski -98px'i 0 yaptık, gökyüzünden aşağı indirdik */
+    position: fixed;    /* Ekrana çiviledik */
+    top: 20px;          /* Siyah kutunun içinde güzel duracağı yükseklik */
+    left: 15px;         /* Soldan bırakacağı şık boşluk */
+    z-index: 1001;      /* Siyah kutunun üstünde görünmesi için */
+ }
+.başlık h1{
+    font-size: 45px; /* Yukarıdaki 22px değerini aynen alır */
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.back{
+    background-color: black;
+    width: 360px;
+    position: fixed;
+    z-index: 1001;
+}
+.box{
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    
+    height: 100px;
+    width: 100%;
+    
+    position: fixed;
+    z-index: 1000;
+    top: 0;             /* Yukarısı sıfıra kilitlendi, artık aşağı kaçamaz */
+    left: 0;
+}
+
+
+
+@media screen and (min-width:360px){
+    .başlık h1{
+        font-size: 40px;
+    }
+    .başlık{
+        top: 19px;
+    }
+    
+}
+@media screen and (min-width:450px){
+    
+     .box-item{
+        font-size: 17px;
+
+          }
+        
+    .container{
+        top: 29px;
+        gap: 30px;
+    }
+    .başlık h1{
+        font-size: 90px;
+    }
+  
+}
+
+
+@media screen and (min-width:400px){
+    .başlık h1{
+        font-size: 60px;
+    }
+    .başlık{
+        top: 10px;
+    }
+    
+}
+
+@media screen and (min-width:500px){
+    .başlık h1{
+        font-size: 60px;
+    }
+    .başlık{
+        /*top: -8px;*/
+    }
+}
+
+@media screen and (min-width:580px){
+    .box{
+        width: 1000px;
+    }
+   
+}
+@media screen and (min-width:600px){
+    .box-item{
+        font-size: 24px;
+          }
+        
+    .container{
+        top: 29px;
+        gap: 30px;
+    }
+    .başlık h1{
+        font-size: 80px;
+        margin-top: -10px;
+    }
+    .box{
+        height: 120px;
+        width: 2200px;
+    }
+   
+}
+
+@media screen and (min-width:850px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 30px;
+        gap: 25px;
+    }
+    .başlık h1{
+        font-size: 100px;
+    }
+    .box{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:700px){
+    .box-item{
+        font-size: 27px;
+          }
+        
+    .container{
+        top: 30px;
+        gap: 25px;
+    }
+    .başlık h1{
+        font-size: 100px;
+        margin-top: -20px;
+    }
+    .box{
+        height: 120px;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 35px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+
+}
+
+@media screen and (min-width:1100px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 35px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+}
+
+@media screen and (min-width:1200px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+  }
+
+
+@media screen and (min-width:1260px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+}
+
+@media screen and (min-width:1300px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+   
+}
+
+@media screen and (min-width:1400px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+ 
+}
+
+@media screen and (min-width:1500px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+
+}
+
+@media screen and (min-width:1600px){
+    .box-item{
+        font-size: 40px;
+          }
+        
+    .container{
+        top: 39px;
+        gap: 45px;
+    }
+    .başlık h1{
+        font-size: 120px;
+    }
+    .box{
+        height: 145px;
+        
+    }
+    
+
+}
+
+
+.görseltop{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 150px;
+gap: 30px;
+}
+.görsel1{
+width: 100px;
+margin: 10px;
+display: flex;
+justify-content: center;
+flex: 1;
+min-width: 150px;
+transition: 1.5s ease;
+
+
+}
+
+.görsel1 img{
+    object-fit: cover;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.görsel1:hover{
+    scale: 1.3;
+
+}
